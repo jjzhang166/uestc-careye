@@ -9,8 +9,20 @@
 /home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.cpp
 detcetModel.h
 /home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.h
+opencv2/imgproc.hpp
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/opencv2/imgproc.hpp
+opencv2/highgui.hpp
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/opencv2/highgui.hpp
 
 /home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.h
 stdio.h
 /home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/stdio.h
+
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/imageController.cpp
+imageController.h
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/imageController.h
+
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/imageController.h
+opencv/cv.hpp
+-
 

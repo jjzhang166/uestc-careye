@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.7)
+project(UESTC_SafeEye)
+FIND_PACKAGE(OpenCV REQUIRED)
+set(CMAKE_CXX_STANDARD 11)
+set(window mainWindow.cpp)
+add_library(window SHARED ${window})
+target_link_libraries(window ${OpenCV_LIBS})

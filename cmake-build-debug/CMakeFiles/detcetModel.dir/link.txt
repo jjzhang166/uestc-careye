@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libdetcetModel.so -o libdetcetModel.so CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.o CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o 
+/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libdetcetModel.so -o bin/libs/libdetcetModel.so CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o 

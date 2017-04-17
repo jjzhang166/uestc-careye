@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/UESTC_MobileEye.dir/main.cpp.o"
-  "CMakeFiles/UESTC_MobileEye.dir/Thread/videoThread.cpp.o"
-  "UESTC_MobileEye.pdb"
-  "UESTC_MobileEye"
+  "CMakeFiles/UESTC_MobileEye.dir/Main/main.cpp.o"
+  "bin/libs/UESTC_MobileEye.pdb"
+  "bin/libs/UESTC_MobileEye"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.o"
   "CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o"
-  "libdetcetModel.pdb"
-  "libdetcetModel.so"
+  "bin/libs/libdetcetModel.pdb"
+  "bin/libs/libdetcetModel.so"
 )
 
 # Per-language clean rules from dependency scanning.

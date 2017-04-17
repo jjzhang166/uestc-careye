@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/norse/WorkSpace/C/UESTC-SaveEye/Thread/videoThread.cpp" "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/UESTC_MobileEye.dir/Thread/videoThread.cpp.o"
-  "/home/norse/WorkSpace/C/UESTC-SaveEye/main.cpp" "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/UESTC_MobileEye.dir/main.cpp.o"
+  "/home/norse/WorkSpace/C/UESTC-SaveEye/Main/main.cpp" "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/UESTC_MobileEye.dir/Main/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,6 +16,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/Thread/CMakeFiles/Thread.dir/DependInfo.cmake"
+  "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/cvModel/CMakeFiles/cvModel.dir/DependInfo.cmake"
+  "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/weather/CMakeFiles/weather.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

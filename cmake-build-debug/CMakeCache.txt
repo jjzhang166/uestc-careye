@@ -181,17 +181,62 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
+//Dependencies for target
+SHARED_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+Thread_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_video;general;opencv_videoio;general;opencv_videostab;general;opencv_viz;general;cvModel;
+
 //Value Computed by CMake
 UESTC_MobileEye_BINARY_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug
 
 //Value Computed by CMake
 UESTC_MobileEye_SOURCE_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye
 
+//Value Computed by CMake
+UESTC_Sa_BINARY_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/Thread
+
+//Value Computed by CMake
+UESTC_Sa_SOURCE_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/Thread
+
+//Value Computed by CMake
+UESTC_SafeEye_BINARY_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/Main
+
+//Value Computed by CMake
+UESTC_SafeEye_SOURCE_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/Main
+
+//Value Computed by CMake
+UESTC_SafeEyq_BINARY_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/Thread
+
+//Value Computed by CMake
+UESTC_SafeEyq_SOURCE_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/Thread
+
+//Value Computed by CMake
+UESTC_Safe_BINARY_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/Thread
+
+//Value Computed by CMake
+UESTC_Safe_SOURCE_DIR:STATIC=/home/norse/WorkSpace/C/UESTC-SaveEye/Thread
+
 //Dependencies for target
 aaa_LIB_DEPENDS:STATIC=
 
+//Dependencies for the target
+cvModel_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_video;general;opencv_videoio;general;opencv_videostab;general;opencv_viz;general;weather;
+
 //Dependencies for target
 detcetModel_LIB_DEPENDS:STATIC=
+
+//The directory containing a CMake configuration file for w.
+w_DIR:PATH=w_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for wea.
+wea_DIR:PATH=wea_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for weather.
+weather_DIR:PATH=weather_DIR-NOTFOUND
+
+//Dependencies for the target
+weather_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_video;general;opencv_videoio;general;opencv_videostab;general;opencv_viz;general;curl;
 
 
 ########################
@@ -292,7 +337,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

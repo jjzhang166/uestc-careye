@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named weather
+
+# Build rule for target.
+weather: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 weather
+.PHONY : weather
+
+# fast build rule for target.
+weather/fast:
+	$(MAKE) -f weather/CMakeFiles/weather.dir/build.make weather/CMakeFiles/weather.dir/build
+.PHONY : weather/fast
+
+#=============================================================================
+# Target rules for targets named cvModel
+
+# Build rule for target.
+cvModel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cvModel
+.PHONY : cvModel
+
+# fast build rule for target.
+cvModel/fast:
+	$(MAKE) -f cvModel/CMakeFiles/cvModel.dir/build.make cvModel/CMakeFiles/cvModel.dir/build
+.PHONY : cvModel/fast
+
+#=============================================================================
+# Target rules for targets named Thread
+
+# Build rule for target.
+Thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Thread
+.PHONY : Thread
+
+# fast build rule for target.
+Thread/fast:
+	$(MAKE) -f Thread/CMakeFiles/Thread.dir/build.make Thread/CMakeFiles/Thread.dir/build
+.PHONY : Thread/fast
+
+#=============================================================================
 # Target rules for targets named UESTC_MobileEye
 
 # Build rule for target.
@@ -120,129 +159,8 @@ UESTC_MobileEye: cmake_check_build_system
 
 # fast build rule for target.
 UESTC_MobileEye/fast:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/build
+	$(MAKE) -f Main/CMakeFiles/UESTC_MobileEye.dir/build.make Main/CMakeFiles/UESTC_MobileEye.dir/build
 .PHONY : UESTC_MobileEye/fast
-
-#=============================================================================
-# Target rules for targets named detcetModel
-
-# Build rule for target.
-detcetModel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 detcetModel
-.PHONY : detcetModel
-
-# fast build rule for target.
-detcetModel/fast:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/build
-.PHONY : detcetModel/fast
-
-Thread/videoThread.o: Thread/videoThread.cpp.o
-
-.PHONY : Thread/videoThread.o
-
-# target to build an object file
-Thread/videoThread.cpp.o:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/Thread/videoThread.cpp.o
-.PHONY : Thread/videoThread.cpp.o
-
-Thread/videoThread.i: Thread/videoThread.cpp.i
-
-.PHONY : Thread/videoThread.i
-
-# target to preprocess a source file
-Thread/videoThread.cpp.i:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/Thread/videoThread.cpp.i
-.PHONY : Thread/videoThread.cpp.i
-
-Thread/videoThread.s: Thread/videoThread.cpp.s
-
-.PHONY : Thread/videoThread.s
-
-# target to generate assembly for a file
-Thread/videoThread.cpp.s:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/Thread/videoThread.cpp.s
-.PHONY : Thread/videoThread.cpp.s
-
-cvModel/detcetModel.o: cvModel/detcetModel.cpp.o
-
-.PHONY : cvModel/detcetModel.o
-
-# target to build an object file
-cvModel/detcetModel.cpp.o:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.o
-.PHONY : cvModel/detcetModel.cpp.o
-
-cvModel/detcetModel.i: cvModel/detcetModel.cpp.i
-
-.PHONY : cvModel/detcetModel.i
-
-# target to preprocess a source file
-cvModel/detcetModel.cpp.i:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.i
-.PHONY : cvModel/detcetModel.cpp.i
-
-cvModel/detcetModel.s: cvModel/detcetModel.cpp.s
-
-.PHONY : cvModel/detcetModel.s
-
-# target to generate assembly for a file
-cvModel/detcetModel.cpp.s:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.s
-.PHONY : cvModel/detcetModel.cpp.s
-
-cvModel/imageController.o: cvModel/imageController.cpp.o
-
-.PHONY : cvModel/imageController.o
-
-# target to build an object file
-cvModel/imageController.cpp.o:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o
-.PHONY : cvModel/imageController.cpp.o
-
-cvModel/imageController.i: cvModel/imageController.cpp.i
-
-.PHONY : cvModel/imageController.i
-
-# target to preprocess a source file
-cvModel/imageController.cpp.i:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.i
-.PHONY : cvModel/imageController.cpp.i
-
-cvModel/imageController.s: cvModel/imageController.cpp.s
-
-.PHONY : cvModel/imageController.s
-
-# target to generate assembly for a file
-cvModel/imageController.cpp.s:
-	$(MAKE) -f CMakeFiles/detcetModel.dir/build.make CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.s
-.PHONY : cvModel/imageController.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/UESTC_MobileEye.dir/build.make CMakeFiles/UESTC_MobileEye.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -252,20 +170,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... weather"
+	@echo "... cvModel"
+	@echo "... Thread"
 	@echo "... UESTC_MobileEye"
-	@echo "... detcetModel"
-	@echo "... Thread/videoThread.o"
-	@echo "... Thread/videoThread.i"
-	@echo "... Thread/videoThread.s"
-	@echo "... cvModel/detcetModel.o"
-	@echo "... cvModel/detcetModel.i"
-	@echo "... cvModel/detcetModel.s"
-	@echo "... cvModel/imageController.o"
-	@echo "... cvModel/imageController.i"
-	@echo "... cvModel/imageController.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

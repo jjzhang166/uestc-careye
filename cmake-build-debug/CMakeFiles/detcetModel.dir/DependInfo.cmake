@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.cpp" "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.o"
   "/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/imageController.cpp" "/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

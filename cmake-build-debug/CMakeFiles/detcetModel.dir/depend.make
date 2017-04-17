@@ -4,3 +4,6 @@
 CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.o: ../cvModel/detcetModel.cpp
 CMakeFiles/detcetModel.dir/cvModel/detcetModel.cpp.o: ../cvModel/detcetModel.h
 
+CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o: ../cvModel/imageController.cpp
+CMakeFiles/detcetModel.dir/cvModel/imageController.cpp.o: ../cvModel/imageController.h
+
