@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.cpp
+detcetModel.h
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.h
+
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/detcetModel.h
+stdio.h
+/home/norse/WorkSpace/C/UESTC-SaveEye/cvModel/stdio.h
+

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.7)
+project(UESTC_MobileEye)
+set(CMAKE_CXX_STANDARD 11)
+FIND_PACKAGE(OpenCV REQUIRED)
+add_library(detcetModel SHARED cvModel/detcetModel.cpp cvModel/imageController.cpp)
+set(SOURCE_FILES main.cpp Thread/videoThread.cpp Thread/videoThread.h)
+add_executable(UESTC_MobileEye ${SOURCE_FILES} )
+target_link_libraries(UESTC_MobileEye ${OpenCV_LIBS} pthread)

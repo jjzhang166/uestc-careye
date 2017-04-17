@@ -1,0 +1,4 @@
+/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/UESTC_MobileEye.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/cmake-build-debug/CMakeFiles/detcetModel.dir
