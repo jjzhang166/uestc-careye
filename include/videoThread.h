@@ -10,10 +10,13 @@
 #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 #include "map"
-    using namespace std;
-    using namespace cv;
-    class videoThread {
-    public:
-        void startVideo(int cap_1, int cap_2, int width, int hight) ;
-    };
+
+using namespace std;
+using namespace cv;
+
+class videoThread {
+public:
+    void startVideo(int cap_1, int cap_2, int width, int hight, string weather);
+};
+
 #endif //UESTC_MOBILEEYE_VIDEOTHREAD_H

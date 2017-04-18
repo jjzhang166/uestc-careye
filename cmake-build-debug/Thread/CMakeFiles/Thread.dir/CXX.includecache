@@ -42,7 +42,7 @@ stdio.h
 
 ../include/imageController.h
 opencv/cv.hpp
--
+../include/opencv/cv.hpp
 weatherApi.h
 ../include/weatherApi.h
 
@@ -74,7 +74,7 @@ ringThread.h
 
 /home/norse/WorkSpace/C/UESTC-SaveEye/Thread/videoThread.cpp
 detcetModel.h
--
+/home/norse/WorkSpace/C/UESTC-SaveEye/Thread/detcetModel.h
 videoThread.h
 /home/norse/WorkSpace/C/UESTC-SaveEye/Thread/videoThread.h
 

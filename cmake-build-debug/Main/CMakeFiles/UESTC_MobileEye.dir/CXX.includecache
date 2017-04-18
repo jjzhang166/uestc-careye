@@ -42,7 +42,7 @@ sys/socket.h
 
 ../include/imageController.h
 opencv/cv.hpp
--
+../include/opencv/cv.hpp
 weatherApi.h
 ../include/weatherApi.h
 

@@ -10,11 +10,11 @@
 #include <sqltypes.h>
 #include "HTTP.h"
 using namespace cv;
+using namespace std;
 class weatherApi {
 public:
     String weather;
-    weatherApi(String weather);
-    static Mat printData(const Mat screen);
+    Mat printData(const Mat screen, string weather);
 };
 
 #endif //UESTC_MOBILEEYE_WEATHERAPI_H

@@ -7,11 +7,14 @@
 
 #include <map>
 #include "string"
-using  namespace std;
+
+using namespace std;
+
 class CurlModel {
 public:
-    string getData(string url);
-    string postData(map<string,string>);
+    string getData(char url[]);
+
+    string postData(map<string, string>);
 };
 
 

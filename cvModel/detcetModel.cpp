@@ -41,12 +41,11 @@ Mat Detcet::detcetFace(Mat frame) {
 
 Mat Detcet::detcetBody(Mat frame) {
     CascadeClassifier body_cascade;
-    body_cascade.load("./haarcascades/haarcascades_fullbody.xml");
+    body_cascade.load("./haarcascades/haarcascade_fullbody.xml");
     std::vector<Rect> faces;
     Mat frame_gray;
     cvtColor(frame, frame_gray, COLOR_BGR2GRAY);
     equalizeHist(frame_gray, frame_gray);
-    cout<<frame_gray.empty()<<endl;
     body_cascade.detectMultiScale(frame_gray, faces, 1.1, 2, 0, Size(30, 30));
     for (size_t i = 0; i < faces.size(); i++) {
         Point center(faces[i].x + faces[i].width / 2, faces[i].y + faces[i].height / 2);
