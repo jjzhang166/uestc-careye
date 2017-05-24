@@ -21,7 +21,7 @@ string CurlModel::getData(char url[]) {
     ifstream is;
     if (curl != NULL) {
         curl_easy_setopt(curl, CURLOPT_URL, url);
-        curl_easy_setopt(curl, CURLOPT_HEADERDATA, fp);
+        //curl_easy_setopt(curl, CURLOPT_HEADERDATA, fp);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
         res = curl_easy_perform(curl);
         curl_easy_perform(curl);
