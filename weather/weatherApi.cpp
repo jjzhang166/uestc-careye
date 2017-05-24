@@ -2,6 +2,7 @@
 // Created by norse on 17-4-17.
 //
 
+#include <sqltypes.h>
 #include "weatherApi.h"
 #include "string"
 
