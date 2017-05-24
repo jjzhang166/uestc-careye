@@ -7,7 +7,6 @@
 
 
 #include <opencv/cv.hpp>
-#include <sqltypes.h>
 #include "HTTP.h"
 using namespace cv;
 using namespace std;
