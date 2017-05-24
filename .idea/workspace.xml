@@ -111,10 +111,10 @@
       <file leaf-file-name="weatherApi.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weather/weatherApi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="72">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
               <folding>
-                <element signature="e#39#60#0" expanded="true" />
+                <element signature="e#100#121#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -520,7 +520,7 @@
       <workItem from="1495467709148" duration="707000" />
       <workItem from="1495553467411" duration="791000" />
       <workItem from="1495638944960" duration="916000" />
-      <workItem from="1495643250576" duration="1673000" />
+      <workItem from="1495643250576" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="gitignore">
       <created>1495644474407</created>
@@ -533,7 +533,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66177000" />
+    <option name="totallyTimeSpent" value="66387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -891,10 +891,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weather/weatherApi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state relative-caret-position="72">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding>
-            <element signature="e#39#60#0" expanded="true" />
+            <element signature="e#100#121#0" expanded="true" />
           </folding>
         </state>
       </provider>

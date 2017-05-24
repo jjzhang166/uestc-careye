@@ -1,7 +1,8 @@
 //
 // Created by norse on 17-4-17.
 //
-
+//if sqltypes.h is error
+//      apt-get install unixodbc-dev
 #include <sqltypes.h>
 #include "weatherApi.h"
 #include "string"
