@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.0)
 project(UESTC_MobileEye)
 set(CMAKE_CXX_STANDARD 11)
 set(PROJECT_BINARY_DIR ${PROJECT_BINARY_DIR}/bin)
