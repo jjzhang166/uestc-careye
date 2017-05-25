@@ -41,7 +41,8 @@ Mat Detcet::detcetFace(Mat frame) {
 
 Mat Detcet::detcetBody(Mat frame) {
     CascadeClassifier body_cascade;
-    body_cascade.load("./haarcascades/haarcascade_fullbody.xml");
+    if( !body_cascade.load( "./haarcascades/haarcascade_frontalface_alt.xml" ) ){ printf("--(!)Error loading face cascade\n");}
+    //body_cascade.load("./haarcascades/haarcascade_fullbody.xml");
     std::vector<Rect> faces;
     Mat frame_gray;
     cvtColor(frame, frame_gray, COLOR_BGR2GRAY);
