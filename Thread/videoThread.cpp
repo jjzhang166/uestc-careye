@@ -17,7 +17,7 @@ void videoThread::startVideo(int cap_1, int cap_2, int width, int hight, string 
     if (cap_open) {
         while (1) {
             cap_1_1 >> left;
-            cap_1_2 >> right;
+            cap_1_2 >> right;///
             Detcet dec;
             //dec.detcetBody(left);
             //dec.detcetBody(right);
