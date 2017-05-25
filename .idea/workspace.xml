@@ -15,7 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="086d5881-e398-4ac4-9c67-727587da3e67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cvModel/detcetModel.cpp" afterPath="$PROJECT_DIR$/cvModel/detcetModel.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rebuild.sh" afterPath="$PROJECT_DIR$/rebuild.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,17 +82,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rebuild.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rebuild.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rebuild.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="126">
+              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detcetModel.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detcetModel.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cvModel/detcetModel.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/Thread/videoThread.cpp" />
         <option value="$PROJECT_DIR$/build.sh" />
         <option value="$PROJECT_DIR$/Main/main.cpp" />
-        <option value="$PROJECT_DIR$/rebuild.sh" />
         <option value="$PROJECT_DIR$/cvModel/detcetModel.cpp" />
+        <option value="$PROJECT_DIR$/rebuild.sh" />
       </list>
     </option>
   </component>
@@ -425,12 +425,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495647090871</updated>
       <workItem from="1495647093819" duration="3614000" />
-      <workItem from="1495730599953" duration="2003000" />
+      <workItem from="1495730599953" duration="2049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5617000" />
+    <option name="totallyTimeSpent" value="5663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
@@ -587,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rebuild.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thread/videoThread.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
@@ -609,6 +601,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rebuild.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
