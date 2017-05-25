@@ -21,8 +21,8 @@ void videoThread::startVideo(int cap_1, int cap_2, int width, int hight, string 
             Detcet dec;
             //dec.detcetBody(left);
             //dec.detcetBody(right);
-            Mat merge=img_c.image2Merge(left, right, width, hight,weather);
-            imshow("merge", merge);
+            //Mat merge=img_c.image2Merge(left, right, width, hight,weather);
+            imshow("merge", left);
             if (char(waitKey(1)) == 'q') {
                 break;
             }
