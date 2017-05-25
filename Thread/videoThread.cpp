@@ -4,6 +4,7 @@
 #include "detcetModel.h"
 #include "videoThread.h"
 void videoThread::startVideo(int cap_1, int cap_2, int width, int hight, string weather ) {
+
     Mat left;
     Mat right;
     VideoCapture cap_1_1, cap_1_2;
