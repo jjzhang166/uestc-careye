@@ -6,3 +6,5 @@ make -j8
 mkdir bin/temp
 echo "" >> bin/temp/data
 cp -r ../haarcascades bin/
+echo "" >> ./temp/data
+cp -r ../haarcascades ./

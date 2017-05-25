@@ -1,0 +1,14 @@
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/CMakeFiles/edit_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/CMakeFiles/rebuild_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/weather/CMakeFiles/edit_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/weather/CMakeFiles/rebuild_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/weather/CMakeFiles/weather.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/cvModel/CMakeFiles/edit_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/cvModel/CMakeFiles/rebuild_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/cvModel/CMakeFiles/cvModel.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/Thread/CMakeFiles/edit_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/Thread/CMakeFiles/rebuild_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/Thread/CMakeFiles/Thread.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/Main/CMakeFiles/edit_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/Main/CMakeFiles/rebuild_cache.dir
+/home/norse/WorkSpace/C/UESTC-SaveEye/build/Main/CMakeFiles/UESTC_MobileEye.dir
