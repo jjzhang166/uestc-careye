@@ -25,7 +25,7 @@
 #include <string>
 #include <list>
 #include "phonetic_symbol.h"
-#include "utf8.h"
+#include "../utfcpp/source/utf8.h"
 using namespace std;
 
 namespace ekho {

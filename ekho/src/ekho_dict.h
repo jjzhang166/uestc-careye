@@ -29,7 +29,7 @@
 #include <list>
 #include <sndfile.h>
 
-#include "config.h"
+#include "../config.h"
 #ifdef ENABLE_FRISO
 extern "C" {
 #include "friso_API.h"

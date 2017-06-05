@@ -3,3 +3,9 @@
 //
 
 #include "ringThread.h"
+void ringThread::speakAnl(char *text) {
+
+}
+void ringThread::speak(char *text) {
+
+}

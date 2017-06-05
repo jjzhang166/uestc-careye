@@ -8,7 +8,8 @@
 
 class ringThread {
 public:
-
+    void speakAnl(char *text);
+    void speak(char *text);
 };
 
 

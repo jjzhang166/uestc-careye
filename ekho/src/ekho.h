@@ -26,9 +26,9 @@
 #include <semaphore.h>
 #include <pthread.h>
 #include <sndfile.h>
-#include "config.h"
+#include "../config.h"
 #include "ekho_dict.h"
-#include "sonic.h"
+#include "../sonic/sonic.h"
 
 #ifdef HAVE_PULSEAUDIO
 #include <pulse/simple.h>
