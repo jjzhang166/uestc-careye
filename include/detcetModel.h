@@ -12,8 +12,27 @@ using namespace cv;
 
 class Detcet {
 public:
+    /**
+     * load the face xml too detcet the face of human
+     *
+     * @param frame frame stream from capture
+     * @return print detcet output image
+     */
     Mat detcetFace(Mat frame);
+    /**
+     * load the face xml too detcet the body of human
+     *
+     * @param frame frame stream from capture
+     * @return print detcet output image
+     */
     Mat detcetBody(Mat frame);
+    /**
+     * load the face xml too detcet the sign from the roade
+     *
+     * @param frame frame stream from capture
+     * @return print detcet output image
+     */
+    Mat detcetSingal(Mat frame);
 };
 
 

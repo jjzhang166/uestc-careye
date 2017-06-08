@@ -29,7 +29,6 @@ int main(){
     cout << "<h2>学习妹妹的女装照"<<str<<"</h2>\n";
     cout << "</body>\n";
     cout << "</html>\n";
-    //str += getenv("QUERY_STRING");
     return 0;
 }
 

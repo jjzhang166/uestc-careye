@@ -10,4 +10,5 @@ add_subdirectory(weather)
 add_subdirectory(cvModel)
 add_subdirectory(Thread)
 add_subdirectory(Main)
+add_subdirectory(config)
 

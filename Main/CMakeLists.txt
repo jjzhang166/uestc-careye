@@ -14,4 +14,5 @@ target_link_libraries(
         pthread
         vorbis
         vorbisenc
+        config
 )

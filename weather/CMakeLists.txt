@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 project(UESTC_SafeEye)
 set(CMAKE_CXX_STANDARD 11)
-FIND_PACKAGE(OpenCV REQUIRED)
 set(weather CurlModel.cpp weatherApi.cpp HTTP.cpp)
 add_library(weather SHARED ${weather})
 target_link_libraries(weather ${OpenCV_LIBS} curl)
