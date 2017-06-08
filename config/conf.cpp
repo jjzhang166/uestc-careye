@@ -78,7 +78,7 @@ int Conf::reConfig() {
             }
         }
         loadFile.close();
-        cout<<this->ConfigInfo.size()<<endl;
+        //cout<<this->ConfigInfo.size()<<endl;
     }
     int Conf::configFind(char *buffer, unsigned long len, char *keyword) {
         for (int i = 0; i < len; i++) {

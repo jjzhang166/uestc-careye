@@ -12,8 +12,7 @@ using namespace std;
 
 class CurlModel {
 public:
-    string getData(char url[]);
-
+    string getData(const char* url);
     string postData(map<string, string>);
 };
 
