@@ -20,16 +20,16 @@ int main(int arg, char** args) {
     }
     const char *url=config.ConfigInfo["weather"].c_str();
     string weather=curl.getData(url);
-//    if (weather != "") {
-//        cout << weather << endl;
-//    } else {
-//    }
-//    weather ="{'Weather':'No internet'}";
-//    videoThread video;
-//    try {
-//        video.startVideo(0, 1, 640, 480,weather);
-//    } catch (Exception e) {
-//        throw new Exception();
-//    }
+    if (weather != "") {
+        cout << weather << endl;
+    } else {
+    }
+    weather ="{'Weather':'No internet'}";
+    videoThread video;
+    try {
+        video.startVideo(1, 0, 640, 480,weather);
+    } catch (Exception e) {
+        throw new Exception();
+    }
     return 0;
 }

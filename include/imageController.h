@@ -25,12 +25,27 @@ public:
      */
     Mat image2Merge(Mat cap_1, Mat cap_2, int width, int hight,string weather) ;
     /**
-     * get the hashcode from the image mat
+     * get the p_hashcode from the image mat
      *
      * @param src sourse image
      * @return hashCode
      */
-    char * hashCode(Mat src);
+    string p_hashCode(Mat src);
+    /**
+     * get the p_hashcode from the image mat
+     *
+     * @param src sourse image
+     * @return hashCode
+     */
+    string a_hashCode(Mat src);
+    /**
+     * get the HanmingDistance between two image mat
+     *
+     * @param str1 hashcode of image_1
+     * @param str2 hashcode of image_2
+     * @return HanmingDistance
+     */
+    int HanmingDistance(string &str1,string &str2);
 };
 
 
