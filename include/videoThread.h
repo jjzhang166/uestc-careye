@@ -10,13 +10,22 @@
 #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 #include "map"
+#include "applog.h"
 
 using namespace std;
 using namespace cv;
 
 class videoThread {
 public:
-    void startVideo(int cap_1, int cap_2, int width, int hight, string weather);
+    int startVideo();
+    Mat getVideo();
+    int setConfig(map<string,string> config);
+private:
+    int width,hight,cap_1_id,cap_2_id;
+    string weather;
+    bool cap_open;
+    applog loger;
+    VideoCapture cap_1,cap_2;
 };
 
 #endif //UESTC_MOBILEEYE_VIDEOTHREAD_H

@@ -8,6 +8,7 @@
 #define DEFAULT_BUFFER_SIZE 1024
 #include "list"
 #include "map"
+#include "applog.h"
 class Conf {
 public:
     Conf();
@@ -15,6 +16,7 @@ public:
     int reConfig();
     std::map<std::string,std::string> ConfigInfo;
 private:
+    applog loger;
     std::list<int> Info;
     std::list<std::string> defaultConfig;
     char filePath[DEFAULT_BUFFER_SIZE];

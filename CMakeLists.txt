@@ -11,4 +11,6 @@ add_subdirectory(cvModel)
 add_subdirectory(Thread)
 add_subdirectory(Main)
 add_subdirectory(config)
+add_subdirectory(window)
+add_subdirectory(log)
 

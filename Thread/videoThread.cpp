@@ -3,30 +3,50 @@
 //
 #include "detcetModel.h"
 #include "videoThread.h"
-void videoThread::startVideo(int cap_1, int cap_2, int width, int hight, string weather ) {
+#include "applog.h"
+
+int videoThread::startVideo() {
+    this->cap_1.open(this->cap_1_id);
+    loger.printInfo("open cap_2");
+    this->cap_2.open(this->cap_2_id);
+    loger.printInfo("open cap_1");
+    this->cap_open = (this->cap_1.isOpened()) && (this->cap_2.isOpened());
+    if (this->cap_open) {
+        loger.printSuccess("Load capture");
+    } else {
+        loger.printSuccess("Can not load capture");
+    }
+}
+
+Mat videoThread::getVideo() {
     Mat left;
     Mat right;
-    VideoCapture cap_1_1, cap_1_2;
-    cap_1_1.open(cap_1);
-    cout<<"open cap_1"<<endl;
-    cap_1_2.open(cap_2);
-    cout<<"open cap_2"<<endl;
     imageController img_c;
-    bool cap_open=(cap_1_1.isOpened()) && (cap_1_2.isOpened());
-    cout<<"open status"<<"---------------->加载"<<(cap_open==1?"成功":"失败")<<endl;
-    if (cap_open) {
-        while (1) {
-            cap_1_1 >> left;
-            cap_1_2 >> right;
-            Detcet dec;
-            dec.detcetBody(left);
-            //TODO:debug 异常数据right摄像头
-            dec.detcetBody(left);
-            Mat merge=img_c.image2Merge(left, right, width, hight,weather);
-            imshow("merge", merge);
-            if (char(waitKey(1)) == 'q') {
-                break;
-            }
-        }
+    if (this->cap_open) {
+        this->cap_1 >> left;
+        this->cap_2 >> right;
+        Detcet dec;
+        dec.detcetBody(left);
+        //TODO:debug 异常数据right摄像头
+        dec.detcetBody(left);
+        Mat merge = img_c.image2Merge(left, right,
+                                      this->width,
+                                      this->hight,
+                                      this->weather);
+        return merge;
     }
+}
+
+int videoThread::setConfig(map<string, string> config) {
+    try {
+        this->weather = config["weather"];
+        this->width = atoi(config["width"].c_str());
+        this->hight = atoi(config["hight"].c_str());
+        this->cap_1_id = atoi(config["camera1"].c_str());
+        this->cap_2_id = atoi(config["camera2"].c_str());
+
+    } catch (Exception e) {
+        loger.logError("Cap Config Error");
+    }
+
 }

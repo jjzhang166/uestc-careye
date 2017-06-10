@@ -11,9 +11,12 @@ public:
 
     int sendData(char *data);
 
-    int getData(char *data);
+    int getData(char *buffer);
 
 private:
+    int fd, wr_num, rd_num, status;
+    struct termios Opt;
+    char send_buf[] = "[check]", recv_buf[200];
     char serializeData(char *data);
 };
 

@@ -6,17 +6,21 @@
 #include <iostream>
 #include <fstream>
 #include "conf.h"
-
+#include "applog.h"
 using namespace std;
 
 Conf::Conf() {
     //TODO: get|load|set the car.conf
-    cout << "------------------Load Config------------------\n" << endl;
+    loger.logInfo("------------------Load Config------------------\n");
     string defaultConfig[] = {
-            "weather=\"http://www.weather.com.cn/data/cityinfo/101270101.html\"",
-            "facecascade=\"./haarcascades/haarcascade_frontalface_alt.xml\"",
-            "eyecascade=\"./haarcascades/haarcascade_eye_tree_eyeglasses.xml\"",
-            "bodycascade=\"./haarcascades/haarcascade_fullbody.xml\"",
+            "weatherapi=http://www.weather.com.cn/data/cityinfo/101270101.html",
+            "$facecascade=./haarcascades/haarcascade_frontalface_alt.xml",
+            "$eyecascade=./haarcascades/haarcascade_eye_tree_eyeglasses.xml",
+            "$bodycascade=./haarcascades/haarcascade_fullbody.xml",
+            "camera1=0",
+            "camera2=1",
+            "width=640",
+            "hight=480"
     };
     for (string x:defaultConfig) {
         this->defaultConfig.push_front(x);
@@ -24,10 +28,11 @@ Conf::Conf() {
     fstream _file;
     _file.open(CONFIG_FILE_PATH, ios::in | ios::app);
     if (!_file) {
-        cout << CONFIG_FILE_PATH << "Config file is not exits" << endl;
+        loger.printInfo("Config file is not exits");
+        cout << CONFIG_FILE_PATH << "" << endl;
         _file.close();
         fstream fout(CONFIG_FILE_PATH, std::ios::app);
-        cout << CONFIG_FILE_PATH << "Config file had been create" << endl;
+        loger.printInfo("Config file had been create");
         if (fout) {
             for (auto i:defaultConfig) {
                 fout <<i;
@@ -44,7 +49,7 @@ int Conf::reConfig() {
         for (auto i:this->defaultConfig) {
             fout << i << endl;
         }
-        cout<<"reConfig Success"<<endl;
+        loger.printInfo("rewrite the config file success");
         return 1;
     } else return 0;
 }
@@ -58,7 +63,8 @@ int Conf::reConfig() {
         int nFilesize = (int) ss;
         //cout<<"File Size:"<<nFilesize<<endl;
         if (ss == 0) {
-            cout << "Load error File is distoried" << endl;
+            loger.printInfo("Load error File is distoried");
+
             return -1;
         }
         loadFile.seekg(0);
@@ -69,16 +75,13 @@ int Conf::reConfig() {
             char* value_c=this->cinfigProfileFind(buff, DEFAULT_BUFFER_SIZE, key_c);
             string value=value_c;
             string key=key_c;
-            //cout << "Key>>>" <<key<< endl;
-            //cout << "Value>>>" << this->cinfigProfileFind(buff, DEFAULT_BUFFER_SIZE, this->configFindKey(buff, DEFAULT_BUFFER_SIZE)) << endl;
-            realpath(value_c, buff_2);
-            if ((!(strlen(buff_2) == 0))) {
+            string info=key+"------------->"+value;
+            loger.printInfo(info);
+            if(realpath(value_c, buff_2))
                 this->ConfigInfo.insert(pair<string,string>(key,(string)buff_2));
-                //cout << "Real Path:" << buff_2 << endl;
-            }
+            else this->ConfigInfo.insert((pair<string,string>(key,value)));
         }
         loadFile.close();
-        //cout<<this->ConfigInfo.size()<<endl;
     }
     int Conf::configFind(char *buffer, unsigned long len, char *keyword) {
         for (int i = 0; i < len; i++) {
@@ -120,7 +123,7 @@ int Conf::reConfig() {
         int firstpos = this->configFind(buffer, buflen, keyword);
         if (firstpos == -1)
             return (char *) "";
-        firstpos += strlen(keyword);
+        firstpos += strlen(keyword)+1;
         unsigned long kwlen = this->configFind((buffer + firstpos), buflen - firstpos, (char *) "\r");
         if (kwlen == -1)
             kwlen = buflen - firstpos;
