@@ -2,8 +2,9 @@
 // Created by norse on 17-6-11.
 //
 
-#ifndef UESTC_MOBILEEYE_APPLOG_H
-#define UESTC_MOBILEEYE_APPLOG_H
+#ifndef CAR_EYE_APPLOG_H
+#define CAR_EYE_APPLOG_H
+#include <iostream>
 
 class applog {
 public:
@@ -24,4 +25,4 @@ public:
 };
 
 
-#endif //UESTC_MOBILEEYE_APPLOG_H
+#endif //CAR_EYE_APPLOG_H

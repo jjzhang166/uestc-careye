@@ -2,8 +2,8 @@
 // Created by norse on 17-4-18.
 //
 
-#ifndef UESTC_MOBILEEYE_RINGTHREAD_H
-#define UESTC_MOBILEEYE_RINGTHREAD_H
+#ifndef CAR_EYE_RINGTHREAD_H
+#define CAR_EYE_RINGTHREAD_H
 
 
 class ringThread {
@@ -13,4 +13,4 @@ public:
 };
 
 
-#endif //UESTC_MOBILEEYE_RINGTHREAD_H
+#endif //CAR_EYE_RINGTHREAD_H

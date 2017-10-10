@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 3.0)
-project(UESTC_SafeEye)
-set(CMAKE_CXX_STANDARD 11)
-FIND_PACKAGE(OpenCV REQUIRED)
-set(Thread videoThread.cpp ringThread.cpp)
-add_library(Thread SHARED ${Thread})
-target_link_libraries(Thread ${OpenCV_LIBS} cvModel)

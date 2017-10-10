@@ -2,8 +2,8 @@
 // Created by norse on 17-4-17.
 //
 
-#ifndef UESTC_MOBILEEYE_CURLMODEL_H
-#define UESTC_MOBILEEYE_CURLMODEL_H
+#ifndef CAR_EYE_CURLMODEL_H
+#define CAR_EYE_CURLMODEL_H
 
 #include <map>
 #include "string"
@@ -17,4 +17,4 @@ public:
 };
 
 
-#endif //UESTC_MOBILEEYE_CURLMODEL_H
+#endif //CAR_EYE_CURLMODEL_H

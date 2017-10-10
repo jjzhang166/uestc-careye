@@ -2,8 +2,8 @@
 // Created by norse on 17-4-17.
 //
 
-#ifndef UESTC_MOBILEEYE_WEATHERAPI_H
-#define UESTC_MOBILEEYE_WEATHERAPI_H
+#ifndef CAR_EYE_WEATHERAPI_H
+#define CAR_EYE_WEATHERAPI_H
 
 
 #include <opencv/cv.hpp>
@@ -16,4 +16,4 @@ public:
     Mat printData(const Mat screen, string weather);
 };
 
-#endif //UESTC_MOBILEEYE_WEATHERAPI_H
+#endif //CAR_EYE_WEATHERAPI_H

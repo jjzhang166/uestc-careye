@@ -2,23 +2,35 @@
 // Created by norse on 17-4-19.
 //
 
-#ifndef UESTC_MOBILEEYE_USBIOMODEL_H
-#define UESTC_MOBILEEYE_USBIOMODEL_H
+#ifndef CAR_EYE_USBIOMODEL_H
+#define CAR_EYE_USBIOMODEL_H
 
+#include "USBIOModel.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <termios.h>
+#include <zconf.h>
+#include "applog.h"
+#include <iostream>
+#include "string"
+#include "map"
+using namespace std;
 class USBIOModel {
 public:
     int findCOM();
-
     int sendData(char *data);
-
-    int getData(char *buffer);
-
+    map<string,string> getData();
+    int closeCOM();
 private:
-    int fd, wr_num, rd_num, status;
     struct termios Opt;
-    char send_buf[] = "[check]", recv_buf[200];
-    char serializeData(char *data);
+    int port=0;
+    applog loger;
+    map<string,string>  serializeData(char *data);
+    int search_find(const char *chr_1,const char *chr_2);
 };
 
 
-#endif //UESTC_MOBILEEYE_USBIOMODEL_H
+#endif //CAR_EYE_USBIOMODEL_H

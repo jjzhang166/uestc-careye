@@ -2,8 +2,8 @@
 // Created by norse on 17-4-16.
 //
 
-#ifndef UESTC_MOBILEEYE_IMAGECONTROLLER_H
-#define UESTC_MOBILEEYE_IMAGECONTROLLER_H
+#ifndef CAR_EYE_IMAGECONTROLLER_H
+#define CAR_EYE_IMAGECONTROLLER_H
 
 
 #include "opencv/cv.hpp"
@@ -45,8 +45,8 @@ public:
      * @param str2 hashcode of image_2
      * @return HanmingDistance
      */
-    int HanmingDistance(string &str1,string &str2);
+    double HanmingDistance(string &str1,string &str2);
 };
 
 
-#endif //UESTC_MOBILEEYE_IMAGECONTROLLER_H
+#endif //CAR_EYE_IMAGECONTROLLER_H

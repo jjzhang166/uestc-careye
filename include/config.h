@@ -1,7 +1,7 @@
 /* config.h.  Generated from config.h.in by configure.  */
-/* config.h.in.  Generated from configure.ac by autoheader.  */
+/* config_model.h.in.  Generated from configure.ac by autoheader.  */
 
-/* Define to 1 if the `closedir' function returns void instead of `int'. */
+/* Define to 1 if the `closedir' public_logic returns void instead of `int'. */
 /* #undef CLOSEDIR_VOID */
 
 /* Enable Festival */
@@ -35,14 +35,14 @@
 /* Define to 1 if you have the <locale.h> header file. */
 #define HAVE_LOCALE_H 1
 
-/* Define to 1 if your system has a GNU libc compatible `malloc' function, and
+/* Define to 1 if your system has a GNU libc compatible `malloc' public_logic, and
    to 0 otherwise. */
 #define HAVE_MALLOC 1
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
 
-/* Define to 1 if you have the `memset' function. */
+/* Define to 1 if you have the `memset' public_logic. */
 #define HAVE_MEMSET 1
 
 /* Define if you have libmp3lame */
@@ -54,7 +54,7 @@
 /* Define if you have libpulse */
 #define HAVE_PULSEAUDIO 1
 
-/* Define to 1 if you have the `setlocale' function. */
+/* Define to 1 if you have the `setlocale' public_logic. */
 #define HAVE_SETLOCALE 1
 
 /* Define to 1 if stdbool.h conforms to C99. */
@@ -72,7 +72,7 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
-/* Define to 1 if you have the `strstr' function. */
+/* Define to 1 if you have the `strstr' public_logic. */
 #define HAVE_STRSTR 1
 
 /* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
@@ -135,7 +135,7 @@
 /* #undef inline */
 #endif
 
-/* Define to rpl_malloc if the replacement function should be used. */
+/* Define to rpl_malloc if the replacement public_logic should be used. */
 /* #undef malloc */
 
 /* Define to `unsigned int' if <sys/types.h> does not define. */

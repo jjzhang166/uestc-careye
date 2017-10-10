@@ -1,42 +1,49 @@
 //
-// Created by norse on 17-4-18.
+// Created by Summer-V on 17-4-18.
 //
 
-#ifndef UESTC_MOBILEEYE_MAINWINDOW_H
-#define UESTC_MOBILEEYE_MAINWINDOW_H
+#ifndef CAR_EYE_MAINWINDOW_H
+#define CAR_EYE_MAINWINDOW_H
 
 #include <opencv/highgui.h>
 #include "gtk/gtk.h"
 #include "map"
 #include "applog.h"
 #include "videoThread.h"
+#include "USBIOModel.h"
 
 using namespace std;
-
+struct singalData{
+    videoThread *video;
+    GtkWidget *imageController;
+    GtkWidget *gpsController;
+    GtkWidget *temp_nowController;
+    GtkWidget *temputerController;
+    GtkWidget *speed;
+    GtkWidget *alpha;
+    GtkWidget *beta;
+    GtkWidget *gama;
+    map<string, string> config;
+    USBIOModel serial;
+};
 class mainWindow {
 public:
     void runMainWindow();
-
     int setConfig(map<string, string> info);
-
 private:
-    videoThread video;
-    map<string, string> config;
-    int width, hight;
-    string weather;
-
-    static gint changeImage(gpointer data);
-
-    gint changeTime(char *time);
-
-    gint delete_event(GtkWidget *widget, gpointer data);
-
-    void destroy(GtkWidget *widget, gpointer data);
-
-    void  getTime();
-
     applog loger;
+    string weather;
+    int width, hight;
+    videoThread video;
+    struct singalData singal;
+    map<string, string> config;
+    gint delete_event(GtkWidget *widget, gpointer data);
+    void  getTime();
+    void destroy(GtkWidget *widget, gpointer data);
+    static gint changeImage(gpointer data);
+    static gint getSerinal(gpointer data);
+    static gint changeState(gpointer data);
 };
 
 
-#endif //UESTC_MOBILEEYE_MAINWINDOW_H
+#endif //CAR_EYE_MAINWINDOW_H

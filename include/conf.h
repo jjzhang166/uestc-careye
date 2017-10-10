@@ -2,8 +2,8 @@
 // Created by Summer-V on 17-6-8.
 //
 
-#ifndef UESTC_MOBILEEYE_CONF_H
-#define UESTC_MOBILEEYE_CONF_H
+#ifndef CAR_EYE_CONF_H
+#define CAR_EYE_CONF_H
 #define CONFIG_FILE_PATH "car.conf"
 #define DEFAULT_BUFFER_SIZE 1024
 #include "list"
@@ -21,11 +21,11 @@ private:
     std::list<std::string> defaultConfig;
     char filePath[DEFAULT_BUFFER_SIZE];
     char *filename=(char *)"car.conf";
-    char* configFindKey(char* buffer, unsigned long buflen);
+    char *configFindKey(char* buffer, unsigned long buflen);
     int cinfigFindInt(char* buffer, unsigned long buflen,char *keyword);
     char *cinfigProfileFind(char* buffer, unsigned long buflen,char *keyword);
     int configFind(char* buffer, unsigned long len,char *keyword);
 };
 
 
-#endif //UESTC_MOBILEEYE_CONF_H
+#endif //CAR_EYE_CONF_H

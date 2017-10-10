@@ -2,8 +2,8 @@
 // Created by norse on 17-4-16.
 //
 
-#ifndef UESTC_MOBILEEYE_VIDEOTHREAD_H
-#define UESTC_MOBILEEYE_VIDEOTHREAD_H
+#ifndef CAR_EYE_VIDEOTHREAD_H
+#define CAR_EYE_VIDEOTHREAD_H
 
 #include "imageController.h"
 #include <iostream>
@@ -21,11 +21,13 @@ public:
     Mat getVideo();
     int setConfig(map<string,string> config);
 private:
-    int width,hight,cap_1_id,cap_2_id;
+    int width,hight,cap_id;
     string weather;
     bool cap_open;
     applog loger;
-    VideoCapture cap_1,cap_2;
+    VideoCapture cap_devices;
+
+    static void *cap_thread(void *object);
 };
 
-#endif //UESTC_MOBILEEYE_VIDEOTHREAD_H
+#endif //CAR_EYE_VIDEOTHREAD_H

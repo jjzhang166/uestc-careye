@@ -1,5 +1,0 @@
-use_cache "/var/www/opencv/.cache"
-do_unpack "ippicv_linux_20151201.tgz" "808b791a6eac9ed78d32a7666804320e" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/81a676001ca8075ada498583e4166079e5744668/ippicv/ippicv_linux_20151201.tgz" "/var/www/opencv/rebuild/3rdparty/ippicv"
-#check_md5 "/var/www/opencv/.cache/ippicv/808b791a6eac9ed78d32a7666804320e-ippicv_linux_20151201.tgz"
-#mkdir "/var/www/opencv/rebuild/3rdparty/ippicv"
-#unpack "/var/www/opencv/rebuild/3rdparty/ippicv" "/var/www/opencv/.cache/ippicv/808b791a6eac9ed78d32a7666804320e-ippicv_linux_20151201.tgz"

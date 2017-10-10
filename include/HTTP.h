@@ -2,8 +2,8 @@
 // Created by norse on 17-4-17.
 //
 
-#ifndef UESTC_MOBILEEYE_HTTP_H
-#define UESTC_MOBILEEYE_HTTP_H
+#ifndef CAR_EYE_HTTP_H
+#define CAR_EYE_HTTP_H
 
 #include <string.h>
 #include <stdlib.h>
@@ -44,4 +44,4 @@ private:
     static int m_iSocketFd;
 };
 
-#endif //UESTC_MOBILEEYE_HTTP_H
+#endif //CAR_EYE_HTTP_H
