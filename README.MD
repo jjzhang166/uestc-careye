@@ -13,5 +13,7 @@
 ### 开源协议[GPL](http://www.gnu.org/licenses/gpl-3.0.html)  
 希望研究自动控制和自动驾驶的开源盆友一起研究跟新系统代码  
 # 作者信息    
-## 陶智佳
+## Zhijia Tao
 ## QQ:2571440661
+## ZhenYu Ji
+## QQ:804266219
